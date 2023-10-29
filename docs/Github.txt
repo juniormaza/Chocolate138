@@ -1,0 +1,10 @@
+Gerenciamento de Configurações
+- Manter os ativos do projeto seguros (Backup)
+- Organizados para uso (Continuidade)
+- Controle de acesso (Privacidade)
+- Controle de versão (Resiliencia)
+Existe uma profissão: SCM - Software Configuration Management
+
+GitHub é um repositório com versionamento
+É um produto da Microsoft
+
