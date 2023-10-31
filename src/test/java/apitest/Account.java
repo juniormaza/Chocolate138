@@ -27,7 +27,7 @@ public class Account {
     // 3.2 - Métodos e Funções
 
     // Método #1 - Criar Usuário
-    @Test(priority = 1)
+    @Test(priority = 1) // prioridade 01
     public void testCreateUser(){
         // Arrange - Configura
         AccountEntity account = new AccountEntity(); // Instancia a entidade usuario
@@ -65,7 +65,7 @@ public class Account {
 
     } // fim do método de criação de usuário
 
-    @Test(priority = 2)
+    @Test(priority = 2) // Prioridade 02
     public void testGenerateToken(){
         // Configura
         // --> Dados de Entrada são fornecidos pela AccountEntity
