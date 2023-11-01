@@ -1,6 +1,6 @@
 // 1 - Pacote
 package apitest;
-
+// 2 - Bibliotecas
 import com.google.gson.Gson;
 import entities.AccountEntity;
 import io.restassured.response.Response;
@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.is;
 
-// 2 - Bibliotecas
+
 // 3 - Classe
 public class Account {
     // 3.1 - Atributos
