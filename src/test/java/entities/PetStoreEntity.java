@@ -1,6 +1,6 @@
 package entities;
 
-public class StoreEntity {
+public class PetStoreEntity {
     public int id;
     public int petId;
     public int quantity;

@@ -2,11 +2,9 @@
 package apiPetStore;
 // 2 - Bibliotecas
 // - Classe
-import entities.StoreEntity;
+import entities.PetStoreEntity;
 import org.testng.annotations.Test;
 import com.google.gson.Gson;
-
-import java.util.ArrayList;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.is;
@@ -24,7 +22,7 @@ public class Store {
     @Test
     public void testStorePet(){
         // Arrange - Configura
-        StoreEntity store = new StoreEntity(); // Istanciar a entidade
+        PetStoreEntity store = new PetStoreEntity(); // Istanciar a entidade
         store.id = 10; // entrada e saida (resultado esperado)
         store.petId = 10;
         store.quantity = 10;
