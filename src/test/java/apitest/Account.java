@@ -6,6 +6,7 @@ import entities.AccountEntity;
 import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.ITestContext; // Interface do TestNg para compartilhar variaveis
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.is;
@@ -31,7 +32,7 @@ public class Account {
     @Test(priority = 1) // prioridade 01
     public void testCreateUser(){
         // Arrange - Configura
-        account.userName = "charlie970"; // entrada e saida(resultado esperado)
+        account.userName = "charlie971"; // entrada e saida(resultado esperado)
         account.password = "P@ss0rd1"; // entrada
 
          jsonBody = gson.toJson(account); // Converte a entidade usuario no formato json
@@ -66,7 +67,7 @@ public class Account {
     } // fim do método de criação de usuário
 
     @Test(priority = 2) // Prioridade 02
-    public void testGenerateToken(){
+    public void testGenerateToken(ITestContext context){ // Declarar a Interface de Contexto
         // Configura
         // --> Dados de Entrada são fornecidos pela AccountEntity
         // --> Resultado Esperado é que ele receba um token
@@ -90,6 +91,7 @@ public class Account {
 
         // Extração do Token
         token = resposta.jsonPath().getString("token");
+        context.setAttribute("token", token);
         System.out.println("token: " + token);
 
         // Valida
