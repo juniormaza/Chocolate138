@@ -9,7 +9,7 @@ import com.google.gson.Gson;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.is;
 
-public class Store {
+public class TestStore {
     // 3.1 - Atributos
     String jsonBody;
     String ct = "application/json";

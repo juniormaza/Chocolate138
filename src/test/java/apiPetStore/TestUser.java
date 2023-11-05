@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.is;
 
-public class User {
+public class TestUser {
     // 3.1 - Atribudos
     String jsonBody;
     String ct = "application/json";
