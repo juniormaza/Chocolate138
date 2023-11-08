@@ -24,3 +24,5 @@
       And I verify the produtc title "Sauce Labs Backpack"
       And I verify the quantity is "1"
       And I verify the product price "$ 29.99"
+
+
