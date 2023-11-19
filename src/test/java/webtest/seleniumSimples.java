@@ -85,9 +85,9 @@ public class seleniumSimples {
         // Transição de tela para a página do produto
 
         // Validar o nome e o valor
-        assertEquals(driver.findElement(By.cssSelector("div.inventory_item_name")).getText(),
+        assertEquals(driver.findElement(By.cssSelector("div.inventory_details_name.large_size")).getText(),
                 "Sauce Labs Backpack");
-        assertEquals(driver.findElement(By.cssSelector("div.inventory_item_price")).getText(),
+        assertEquals(driver.findElement(By.cssSelector("div.inventory_details_price")).getText(),
                 "$29.99");
 
         // Clicar no botão Adionar no Carrinho
@@ -99,8 +99,8 @@ public class seleniumSimples {
 
         // Verificar o Titulo da Página, nome do produto, quantidade e preco
         assertEquals(driver.findElement(By.cssSelector("span.title")).getText(), "Your Cart");
-        assertEquals(driver.findElement(By.cssSelector("item_4_title_link")).getText(), "Sauce Labs Backpack");
-        assertEquals(driver.findElement(By.cssSelector("div.cart_quantity_label")).getText(), "1");
+        assertEquals(driver.findElement(By.id("item_4_title_link")).getText(), "Sauce Labs Backpack");
+        assertEquals(driver.findElement(By.cssSelector("div.cart_quantity")).getText(), "1");
         assertEquals(driver.findElement(By.cssSelector("div.inventory_item_price")).getText(),"$29.99");
 
     }
