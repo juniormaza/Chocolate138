@@ -36,5 +36,9 @@ public class HomePage extends BasePage {
         btnLogin.click();
     }
 
+    public void clicarNoBotaoLogin(){
+        btnLogin.click();
+    }
+
 
 }
