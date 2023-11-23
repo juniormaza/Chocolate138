@@ -23,14 +23,16 @@ public class selectProductPO {
 
 
     // Construtor
-    public selectProductPO(BasePage basePage){
-        this.driver = basePage.driver; // passagem de bola = instegração Selenium dentro e fora
+    public selectProductPO(Base base){
+        this.driver = base.driver; // passagem de bola = instegração Selenium dentro e fora
     }
 
 
     @Given("I access the SauceDemo store PO")
     public void i_access_the_sauce_demo_store() {
         driver.get("https://www.saucedemo.com");
+        this.homePage = new HomePage(this.driver);
+
 
 
     }

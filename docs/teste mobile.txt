@@ -1,0 +1,23 @@
+TESTES MOBILE
+
+3 tipos de aplicações que podemos testar:
+- Web App (na prática é um site)
+- App nativo (foi escrito para *Android* OU iOS)
+- App hibrido (foi escrito um único código que gera um instalador para o Android e iOS)
+
+Computador para estudar e trabalhar
+- Teste para Android: Intel ou AMD, i5, equivalente ou superior, 8gb (min), 16gb (normal)
+                      Suporte a virtualização/hyperthreading - disco SSD
+
+- Teste para iOS e Android: precisa de um Mac
+
+Instalações: no computador:
+- Android SDK (1 versão para cada versão do Android)
+- Emulador / Imagens dos Aparelhos
+- Aparelho Físico (ativar modo programador - nome será emulator5552)
+
+Ao invés de fazer testes locais, com seu próprio computador e celular/emulador
+utilize um device farm / serviço de teste em nuvem, como:
+- Saucelabs
+- BrowserStack
+- Perfecto
