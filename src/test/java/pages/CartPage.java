@@ -20,7 +20,7 @@ public class CartPage extends CommonPage {
     @FindBy(css = "div.cart_quantity")
     WebElement lblQuantidade;
 
-    @FindBy(css = "btn btn_secondary btn_small cart_button")
+    @FindBy(css = "btn.btn_secondary.btn_small.cart_button")
     WebElement btnRemover;
 
     @FindAll(@FindBy(css = "div.inventory_item_name"))

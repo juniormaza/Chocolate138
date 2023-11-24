@@ -65,6 +65,18 @@ Exitem 3 desafios frequentes na automação de teste
 2 - sincronismo / esperas / wait (temporario / implicitly / explicitly / fluent)
 3 - "Programação Exótica"
 
+Roteiro de Mapeamento para Automação
+- Requisito: smartphone ou emulador, local ou remote (Saucelabs)
+- Instalar o app que eu quero testar (software alvo) ---> MDA My Demo App
+- Instalar um app de inspeção --> Apk Info
+- Com os 2 instalados, verifique peloApk info as informações do app alvo
+>> appPackage: com.saulabs.mydemoapp.android
+>> appActivity: com.saucelabs.mydemoapp.android.view.activities.SplashActivity
+- Instalar o Appium Inspector
+- Configurar as credenciais do Appium ou da Device Farm desejada (Sauce Labs)
+- Configurar as desired capabilities
+- Executar e mapear os elementos
+- Copiar o código gerado
 
 
 
